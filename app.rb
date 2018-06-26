@@ -18,3 +18,4 @@ class App < Sinatra::Base
   @result = @number.to_i * @phrase
   return @result.to_s
 end
+end
