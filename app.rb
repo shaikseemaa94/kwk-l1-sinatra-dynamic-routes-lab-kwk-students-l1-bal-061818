@@ -13,5 +13,8 @@ class App < Sinatra::Base
     return @result.to_s
   end
   get '/say/:number/:phrase'
-  @number
+  @number = params[:number]
+  @phrase = prams[:phrase]
+  @result = @number.to_i * @phrase
+  return @result.to_s
 end
