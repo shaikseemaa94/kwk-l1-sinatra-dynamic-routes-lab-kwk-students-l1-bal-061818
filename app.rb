@@ -19,5 +19,5 @@ class App < Sinatra::Base
   @result = ""
   @result = @number.to_i * @phrase
   return @result.to_s
-end
+  end
 end
